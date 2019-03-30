@@ -2,6 +2,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './core/home/home.component';
 import { AuthComponent } from './core/auth/auth.component';
 import { RegisterComponent } from './core/register/register.component';
+import { HeaderComponent } from './core/shred/header/header.component';
 
 
 const ROUTES : Routes =[
@@ -16,6 +17,10 @@ const ROUTES : Routes =[
     {
         path: 'register',
         component: RegisterComponent
+    },
+    {
+        path: 'header',
+        component: HeaderComponent
     },
     {
         path: '',

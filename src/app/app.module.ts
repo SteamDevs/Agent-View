@@ -13,6 +13,8 @@ import { APP_ROUTING } from './app.routes';
 import { AuthService } from './services/auth.service';
 import { UsersService } from './services/users.service';
 import { RegisterComponent } from './core/register/register.component';
+import { HeaderComponent } from './core/shred/header/header.component';
+import { FooterComponent } from './core/shred/footer/footer.component';
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import { RegisterComponent } from './core/register/register.component';
     AppComponent,
     AuthComponent,
     HomeComponent,
-    RegisterComponent
+    RegisterComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
