@@ -12,6 +12,9 @@ export class UsersService {
 
   constructor(private http: HttpClient) { }
 
+
+  //Probar el insert del rol
+
   addUser(user: User ) : Observable<User> {
     let data = JSON.stringify(user)
     let URL_API = 'http://localhost:8080/api/v1/users'
