@@ -17,9 +17,8 @@ export class UsersService {
 
   addUser(user: User ) : Observable<User> {
     let data = JSON.stringify(user)
-    let URL_API = 'http://localhost:8080/api/v1/users'
     console.log(data);
-    return this.http.post<User>("http://localhost:8080/api/v1/users", data, { headers: this.httpHeaders })
+    return this.http.post<User>("http://localhost:8080/api/v1/users/", data, { headers: this.httpHeaders })
   }
 
 

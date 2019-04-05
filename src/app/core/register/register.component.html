@@ -7,7 +7,7 @@
     <label for="exampleInputEmail1">password</label>
     <input type="text" class="form-control" [(ngModel)]="user.password" name="user"  >
   </div>
-  <input type="text"  name="enabled" [(ngModel)]="user.enabled" >
+  <input type="hidden"  name="enabled" [(ngModel)]="user.enabled" >
   <div class="form-group">
     <label for="exampleInputEmail1">nombre</label>
     <input type="text" class="form-control" [(ngModel)]="user.nombre" name="nombre"  >
@@ -20,6 +20,6 @@
     <label for="exampleInputEmail1">email</label>
     <input type="text" class="form-control" [(ngModel)]="user.email" name="email"  >
   </div>
-  <input type="text" [(ngModel)]="user.roles" name="roles"  >
+  <input type="hidden" [(ngModel)]="user.roles" name="roles"  >
   <button class="btn btn-primary"type="submit" >Register</button>
 </form>
