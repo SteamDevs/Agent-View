@@ -24,13 +24,13 @@
 	<div class="login-box">
       <img src="./assets/logo.png" class="avatar" alt="Avatar Image">
       <h1>Login Here</h1>
-      <form>
+      <form (ngSubmit)="authLogin()" >
         
         <label for="username">Username</label>
-        <input type="text" placeholder="Enter Username" Required>
+        <input type="text" [(ngModel)]="user.username" name="username"  placeholder="Enter Username"  Required>
         
         <label for="password">Password</label>
-        <input type="password" placeholder="Enter Password" Required>
+        <input type="password"  [(ngModel)]="user.password" name="user"  placeholder="Enter Password" Required>
         <input type="submit" value="Log In">
         <a href="#">¿Perdiste tu contraseña?</a><br>
         <input type="button" value="Crear Cuenta">

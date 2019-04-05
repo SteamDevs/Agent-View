@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from '../models/user'
 
 @Component({
   selector: 'app-auth',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AuthComponent implements OnInit {
 
+  private user : User = new User(); 
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  authLogin() : void {
+   console.log(this.user) 
   }
 
 }
