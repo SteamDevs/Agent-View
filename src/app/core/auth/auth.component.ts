@@ -16,6 +16,10 @@ export class AuthComponent implements OnInit {
   }
 
   authLogin() : void {
+    if(this.user.username == null || this.user.password == null ){
+      console.log('el pass / usuario vacio')
+      return
+    }
    console.log(this.user) 
   }
 

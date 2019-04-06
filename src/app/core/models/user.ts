@@ -11,7 +11,7 @@ export class User {
     roles: any =[
         {
             id: 1,
-            name : 'ROLE_NAME'
+            name : 'ROLE_USER'
         }
     ] 
 }
