@@ -13,20 +13,22 @@ export class AuthService {
   private httpHeaders = new HttpHeaders({
     'Content-Type' : 'application/x-www-form-urlencoded',
     'Authorization' : 'Basic' + this.credentials 
+     
   })
 
   
   constructor(private http: HttpClient ) { }
 
 
-  login(user : User ): Observable<any>{
+  login(user : User ): Observable<any>{  
     
     let params = new URLSearchParams()
     params.set('grant_type','password')
     params.set('username', user.username)
     params.set('password', user.password)
  
-    return this.http.post<any>( this.API_URL_OAUTH, params, { headers: this.httpHeaders })
+    console.log(params.toString())
+    return this.http.post<any>( this.API_URL_OAUTH, params.toString(), { headers: this.httpHeaders })
 
   }
 

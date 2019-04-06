@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from '../models/user'
+import { Router } from '@angular/router'
+import { AuthService } from '../../services/auth.service'
 
 @Component({
   selector: 'app-auth',
@@ -10,7 +12,8 @@ export class AuthComponent implements OnInit {
 
   private user : User = new User(); 
  
-  constructor() { }
+  constructor(private authService : AuthService,
+    private router: Router ) {}
 
   ngOnInit() {
   }
@@ -20,7 +23,13 @@ export class AuthComponent implements OnInit {
       console.log('el pass / usuario vacio')
       return
     }
-   console.log(this.user) 
+
+    this.authService.login(this.user)
+      .subscribe( response =>{
+        console.log(response)
+        this.router.navigate(['/home'])
+      })
+    console.log(this.user) 
   }
 
 }
