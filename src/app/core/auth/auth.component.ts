@@ -9,7 +9,7 @@ import { User } from '../models/user'
 export class AuthComponent implements OnInit {
 
   private user : User = new User(); 
-
+ 
   constructor() { }
 
   ngOnInit() {
