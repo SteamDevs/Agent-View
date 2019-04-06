@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { User} from '../models/user'
 import { UsersService } from '../../services/users.service'
 import { Router } from '@angular/router'
+import swal from 'sweetalert2'
 
 @Component({
   selector: 'app-register',
@@ -25,7 +26,12 @@ export class RegisterComponent implements OnInit {
   RegisterNewUser(): void{
     //console.log(this.user)
     this.userService.addUser(this.user)
-      .subscribe( result => this.router.navigate(['/auth']))
+      .subscribe( result => {
+        this.router.navigate(['/auth'])
+        swal.fire(
+          ` Account Created 😎 `, `User : ${result.username} `, `success`
+          )
+      })
   }
 
 }
