@@ -26,10 +26,14 @@ export class AuthComponent implements OnInit {
 
     this.authService.login(this.user)
       .subscribe( response =>{
-        console.log(response)
+
+        this.authService.saveToken(response.access_token)
+        this.authService.saveUser(response.access_token)
+        
         this.router.navigate(['/home'])
+      
       })
-    console.log(this.user) 
+    //console.log(this.user) 
   }
 
 }

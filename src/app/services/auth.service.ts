@@ -35,7 +35,7 @@ export class AuthService {
     this._user.email = payload.email;
     this._user.username = payload.user_name;
     this._user.roles = payload.authorities;
-    sessionStorage.setItem('usuario', JSON.stringify(this._user));
+    sessionStorage.setItem('user', JSON.stringify(this._user));
   }
 
   saveToken(accessToken: string) : void {
@@ -49,6 +49,20 @@ export class AuthService {
     }
 
     return null;
+  }
+
+  getDataStorage() : void{
+    if( sessionStorage.getItem('token') && sessionStorage.getItem('user')){
+
+      this._user =  JSON.parse(sessionStorage.getItem('user'))
+      this._token = sessionStorage.get('token')
+
+    }else{
+
+      this._token = ''
+      this._user  = null
+    
+    }
   }
 
 }
