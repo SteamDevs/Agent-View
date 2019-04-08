@@ -65,4 +65,9 @@ export class AuthService {
     }
   }
 
+  isAuthenticated(){
+    let payload =  JSON.stringify( sessionStorage.getItem('token')) 
+    return  ( payload.length > 5) ? true : false
+  }
+
 }
