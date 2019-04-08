@@ -10,11 +10,10 @@ export class AuthService {
 
   public API_URL_OAUTH: string = 'http://localhost:8080/oauth/token'
   public credentials  = btoa('Agent-Api' + ':' + '123abc')
-  private httpHeaders = new HttpHeaders({
-    'Content-Type' : 'application/x-www-form-urlencoded',
-    'Authorization' : 'Basic' + this.credentials 
-     
-  })
+  public httpHeaders = new HttpHeaders({
+    'Content-Type': 'application/x-www-form-urlencoded',
+    'Authorization': 'Basic ' + this.credentials
+  });
 
   
   constructor(private http: HttpClient ) { }
