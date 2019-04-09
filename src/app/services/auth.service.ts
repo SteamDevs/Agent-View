@@ -70,4 +70,10 @@ export class AuthService {
     return  ( payload.length > 5) ? true : false
   }
 
+  logOut() : void{
+    this._token = ''
+    this._user = null
+    sessionStorage.clear()
+  } 
+
 }

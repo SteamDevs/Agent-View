@@ -20,7 +20,6 @@ export class RegisterComponent implements OnInit {
     private router : Router ) { }
 
   ngOnInit() {
-  
   }
 
   RegisterNewUser(): void{
