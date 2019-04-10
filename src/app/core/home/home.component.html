@@ -1,22 +1,33 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-dark">
-  <a class="navbar-brand" href="#">Bienvenido : {{ user.username  }} </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarText">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#"></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#"></a>
-      </li>
-    </ul>
-    <span class="navbar-text">
-      <button (click)="logout()" class="dropdown-item" type="submit">Sign Out</button>
-    </span>
-  </div>
-</nav>
+<head>
+    <meta charset="UTF-8">
+    <title>UMG DEV SOLUTION</title>
+</head>
+<body>
+<header> 
+      <h3> Welcome : {{ user.username  }}  .</h3> 
+	<section class="wrapper">
+	<nav>
+		<ul>
+			<li><a href="#">Cambiar aqui 1</a></li>
+			<li><a href="#">Cambiar aqui 2</a></li>
+			<li><a href="#">Cambiar aqui 3</a></li>
+			<li><a href="#">Cambiar aqui 4</a></li>
+			<li><a href="#">¿Quienes Somos?</a></li>
+			<li><a  (click)="logout()"> Sign Out </a></li>
+		</ul>
+	
+	</nav>
+	</section>
+	
+	</header>
+		<div class="box1">
+			
+		</div>
+		<div class="box2">
+				pasa pack
+		</div>
+		<div class="box3">
+				unas buenas graficas
+		</div>
+     
+</body>		
