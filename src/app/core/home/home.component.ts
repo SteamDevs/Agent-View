@@ -1,7 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from 'src/app/services/auth.service';
-import { Router } from '@angular/router';
-import { User } from '../models/user';
 
 @Component({
   selector: 'app-home',
@@ -14,19 +11,11 @@ export class HomeComponent implements OnInit {
   private user =   JSON.parse( this.dataStorage )
    
 
-  constructor(private authService : AuthService, 
-    private router : Router ) { }
+  constructor( ) { }
   
 
   ngOnInit() {
     let x = JSON.parse( this.dataStorage ) 
-    console.log(x.username )
+    console.log(x.username ) //probar sino desechar la idea
   }
-
-  logout(){
-    this.authService.logOut()
-    this.router.navigate(['/auth'])
-  }
-
-
 }

@@ -15,7 +15,10 @@ import { UsersService } from './services/users.service';
 import { RegisterComponent } from './core/register/register.component';
 import { HeaderComponent } from './core/shred/header/header.component';
 import { FooterComponent } from './core/shred/footer/footer.component';
-import { ControlComponent } from './core/control/control.component';
+import { ControlUsersComponent } from './core/pages/control-users/control-users.component';
+import { ControlMetricsComponent } from './core/pages/control-metrics/control-metrics.component';
+import { ControlAlertsComponent } from './core/pages/control-alerts/control-alerts.component';
+
 
 
 @NgModule({
@@ -26,7 +29,9 @@ import { ControlComponent } from './core/control/control.component';
     RegisterComponent,
     HeaderComponent,
     FooterComponent,
-    ControlComponent
+    ControlUsersComponent,
+    ControlMetricsComponent,
+    ControlAlertsComponent
   ],
   imports: [
     BrowserModule,
