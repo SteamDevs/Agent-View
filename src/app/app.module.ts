@@ -19,7 +19,8 @@ import { ControlUsersComponent } from './core/pages/control-users/control-users.
 import { ControlMetricsComponent } from './core/pages/control-metrics/control-metrics.component';
 import { ControlAlertsComponent } from './core/pages/control-alerts/control-alerts.component';
 
-
+//Grafic
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { ControlAlertsComponent } from './core/pages/control-alerts/control-aler
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    APP_ROUTING
+    APP_ROUTING,
+    ChartsModule
   ],
   providers: [
     AuthService,

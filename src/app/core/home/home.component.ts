@@ -7,15 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  private dataStorage = sessionStorage.getItem('user')
-  private user =   JSON.parse( this.dataStorage )
-   
+  
 
   constructor( ) { }
   
 
   ngOnInit() {
-    let x = JSON.parse( this.dataStorage ) 
-    console.log(x.username ) //probar sino desechar la idea
   }
 }
