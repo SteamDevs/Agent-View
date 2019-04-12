@@ -10,14 +10,19 @@
       <div class="row">   
         <div class="col-md-6 text-center" style="max-width: 60%;" align="center">
 
-
-            <div style="display: block; width:600px; height: 400px;" align="center" >
-                <canvas class="hck" baseChart 
-                            [datasets]="lineChartData"
-                            [labels]="lineChartLabels"
-                            [chartType]="'line'">
-                  </canvas>
+          <div>
+            <div>
+              <div style="display: block; width:700px; height: 400px;" align="center" >
+                <canvas baseChart
+                  [datasets]="barChartData"
+                  [labels]="barChartLabels"
+                  [chartType]="barChartType">
+                </canvas>
+              </div>
             </div>
+          </div>
+
+            
 
         </div>
       </div>
