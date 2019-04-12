@@ -7,6 +7,7 @@ import { AuthGuard } from './secure/auth.guard';
 import { ControlUsersComponent } from './core/pages/control-users/control-users.component';
 import { ControlMetricsComponent } from './core/pages/control-metrics/control-metrics.component';
 import { ControlAlertsComponent } from './core/pages/control-alerts/control-alerts.component';
+import { ControlProcessesComponent } from './core/pages/control-processes/control-processes.component';
 
 const ROUTES : Routes =[
     {
@@ -25,6 +26,10 @@ const ROUTES : Routes =[
             {
                 path: 'alerts',
                 component : ControlAlertsComponent
+            },
+            {
+                path: 'processes',
+                component : ControlProcessesComponent
             }
         ]
     },

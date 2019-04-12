@@ -21,6 +21,7 @@ import { ControlAlertsComponent } from './core/pages/control-alerts/control-aler
 
 //Grafic
 import { ChartsModule } from 'ng2-charts';
+import { ControlProcessesComponent } from './core/pages/control-processes/control-processes.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ChartsModule } from 'ng2-charts';
     FooterComponent,
     ControlUsersComponent,
     ControlMetricsComponent,
-    ControlAlertsComponent
+    ControlAlertsComponent,
+    ControlProcessesComponent
   ],
   imports: [
     BrowserModule,
