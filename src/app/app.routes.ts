@@ -8,6 +8,7 @@ import { ControlUsersComponent } from './core/pages/control-users/control-users.
 import { ControlMetricsComponent } from './core/pages/control-metrics/control-metrics.component';
 import { ControlAlertsComponent } from './core/pages/control-alerts/control-alerts.component';
 import { ControlProcessesComponent } from './core/pages/control-processes/control-processes.component';
+import { ControlEarningsComponent } from './core/pages/control-earnings/control-earnings.component';
 
 const ROUTES : Routes =[
     {
@@ -30,6 +31,10 @@ const ROUTES : Routes =[
             {
                 path: 'processes',
                 component : ControlProcessesComponent
+            },
+            {
+                path: 'earnings',
+                component : ControlEarningsComponent
             }
         ]
     },

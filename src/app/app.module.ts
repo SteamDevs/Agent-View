@@ -22,6 +22,7 @@ import { ControlAlertsComponent } from './core/pages/control-alerts/control-aler
 //Grafic
 import { ChartsModule } from 'ng2-charts';
 import { ControlProcessesComponent } from './core/pages/control-processes/control-processes.component';
+import { ControlEarningsComponent } from './core/pages/control-earnings/control-earnings.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ControlProcessesComponent } from './core/pages/control-processes/contro
     ControlUsersComponent,
     ControlMetricsComponent,
     ControlAlertsComponent,
-    ControlProcessesComponent
+    ControlProcessesComponent,
+    ControlEarningsComponent
   ],
   imports: [
     BrowserModule,
